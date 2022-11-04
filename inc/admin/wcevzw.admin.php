@@ -110,7 +110,9 @@ function embed_videos_init() {
 add_filter( 'attachment_fields_to_edit', 'wcevzw_woo_embed_video', 20, 2);
 function wcevzw_woo_embed_video( $form_fields, $attachment ) {
 
-	$post_id = (int) $_GET[ 'post' ];
+	if (! $post_id = (int) ($_GET['post'] ?? null)) {
+		return $form_fields;
+	}
 	$nonce = wp_create_nonce( 'bdn-attach_' . $attachment->ID );
 	$attach_image_action_url = admin_url( "media-upload.php?tab=library&post_id=$post_id" );
 
