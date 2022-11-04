@@ -9,7 +9,7 @@
     .woocommerce #content div.product div.thumbnails a, .woocommerce div.product div.thumbnails a, .woocommerce-page #content div.product div.thumbnails a, .woocommerce-page div.product div.thumbnails a {width:100% !important;}
 
     body {
-  margin-top: 50px;
+  margin-top: 0px;
 }
 .pswp__zoom-wrap {
   text-align: center;
@@ -96,7 +96,6 @@ html {
     width: 100%;
 }
 body{
-    display: table;
     height:100%;
     width: 100%;
 }
