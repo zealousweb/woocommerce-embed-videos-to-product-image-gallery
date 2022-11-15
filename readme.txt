@@ -25,6 +25,7 @@ Embed videos to product gallery along with images on product page of WooCommerce
 *	Allows images and videos together in single product gallery
 *	Does not require to overwrite any WooCommerce core files
 *	Youtube video control parameters are supported.
+*	Compatibility with multisite network.
 
 == Plugin Requirement ==
 
@@ -54,6 +55,9 @@ WordPress   : Wordpress 3.0 and latest
 * Enjoy videos in product gallery at frontend.
 
 == Changelog ==
+
+= 3.0 =
+* Fix - Make Multi-Site Compatibility and update syntax of text domain.
 
 = 2.9 =
 * Test - Checking with Latest wordPress and Contact form 7, Tested and works fine.

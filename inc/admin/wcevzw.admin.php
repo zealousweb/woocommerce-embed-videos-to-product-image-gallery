@@ -20,9 +20,9 @@ global $post;
 register_activation_hook ( WCEVZW_FILE, 'wcevzw_woo_activation_check');
 function wcevzw_woo_activation_check()
 {
-	if ( !in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+	if( !is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
 		deactivate_plugins( WCEVZW_PLUGIN_BASENAME );
-		wp_die( _e( '<b>Warning</b> : Install/Activate Woocommerce to activate "Embed Videos For Product Image Gallery Using WooCommerce" plugin.' , WCEVZW_TEXT_DOMAIN ) );
+		wp_die( _e( '<b>Warning</b> : Install/Activate Woocommerce to activate "Embed Videos For Product Image Gallery Using WooCommerce" plugin.' , 'embed-videos-product-image-gallery-woocommerce' ) );
 	}
 }
 
@@ -32,7 +32,7 @@ function wcevzw_woo_activation_check()
 add_filter( 'plugin_action_links_' . WCEVZW_PLUGIN_BASENAME, 'wcevzw_add_action_links_embed_video' );
 function wcevzw_add_action_links_embed_video ( $links ) {
 	 $settingslinks = array(
-	 '<a href="' . admin_url( 'admin.php?page=embed-videos-settings' ) . '"> '. __( 'Settings', WCEVZW_TEXT_DOMAIN) .'</a>',
+	 '<a href="' . admin_url( 'admin.php?page=embed-videos-settings' ) . '"> '. __( 'Settings', 'embed-videos-product-image-gallery-woocommerce') .'</a>',
 	 );
 	return array_merge( $settingslinks, $links );
 }
@@ -65,33 +65,33 @@ function wcevzw_register_embed_videos_settings() {
 */
 function embed_videos_init() {
 ?>
-  <h1><?php echo _e( 'Youtube Video Settings', WCEVZW_TEXT_DOMAIN ); ?></h1>
+  <h1><?php echo _e( 'Youtube Video Settings', 'embed-videos-product-image-gallery-woocommerce' ); ?></h1>
   <form method="post" action="options.php">
 	<?php settings_fields( 'embed-videos-settings' ); ?>
 	<?php do_settings_sections( 'embed-videos-settings' ); ?>
 	<table class="form-table">
 		<tr valign="top">
-			<th scope="row"><?php echo _e( 'Autoplay videos', WCEVZW_TEXT_DOMAIN ).':'; ?></th>
+			<th scope="row"><?php echo _e( 'Autoplay videos', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
 			<td><input type="checkbox" name="embed_videos_autoplay" value="1" <?php echo ( get_option( 'embed_videos_autoplay' ) == 1 ) ? 'checked': ''; ?> /></td>
 		</tr>
 		<tr valign="top">
-			<th scope="row"><?php echo _e( 'Show relative videos', WCEVZW_TEXT_DOMAIN ).':'; ?></th>
+			<th scope="row"><?php echo _e( 'Show relative videos', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
 			<td><input type="checkbox" name="embed_videos_rel" value="1" <?php echo ( get_option( 'embed_videos_rel' ) == 1 ) ? 'checked': ''; ?> /></td>
 		</tr>
 		<tr valign="top">
-			<th scope="row"><?php echo _e( 'Show video information', WCEVZW_TEXT_DOMAIN ).':'; ?></th>
+			<th scope="row"><?php echo _e( 'Show video information', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
 			<td>
 				<input type="checkbox" name="embed_videos_showinfo" value="1" <?php echo ( get_option( 'embed_videos_showinfo' ) == 1 ) ? 'checked': ''; ?> />
 			</td>
 		</tr>
 		<tr valign="top">
-			<th scope="row"><?php echo _e( 'Show fullscreen button', WCEVZW_TEXT_DOMAIN ).':'; ?></th>
+			<th scope="row"><?php echo _e( 'Show fullscreen button', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
 			<td>
 				<input type="checkbox" name="embed_videos_fs" value="1" <?php echo ( get_option( 'embed_videos_fs' ) == 1 ) ? 'checked': ''; ?> />
 			</td>
 		</tr>
 		 <tr valign="top">
-			<th scope="row"><?php echo _e( 'Show video player controls', WCEVZW_TEXT_DOMAIN ).':'; ?></th>
+			<th scope="row"><?php echo _e( 'Show video player controls', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
 			<td>
 				<input type="checkbox" name="embed_videos_controls" value="1" <?php echo ( get_option( 'embed_videos_controls' ) == 1 ) ? 'checked': ''; ?> />
 			</td>
@@ -126,7 +126,7 @@ function wcevzw_woo_embed_video( $form_fields, $attachment ) {
 	$form_fields['videolink_id'] = array(
 		'value' => $field_value ? $field_value : '',
 		'input' => "text",
-		'label' => __( 'Video Link ID', WCEVZW_TEXT_DOMAIN )
+		'label' => __( 'Video Link ID', 'embed-videos-product-image-gallery-woocommerce' )
 	);
 	$form_fields['video_site'] = array(
 		'input' => 'html',
