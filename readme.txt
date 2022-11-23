@@ -4,11 +4,11 @@ Contributors: zealopensource
 Tags: woocommerce, gallery, video gallery, video and image gallery, embed videos, videos woocommerce, iframe, youtube videos, vimeo videos, videos product gallery
 Donate link: http://www.zealousweb.com/payment/
 Requires at least: 3.0.1
-Tested up to: 6.0
+Tested up to: 6.1.1
 Requires PHP: 5.3
-Stable tag: 2.9
+Stable tag: 3.0
 License: GPLv3 or later License
-Version: 2.9
+Version: 3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Embed videos to product gallery along with images on product page of WooCommerce.
@@ -25,6 +25,7 @@ Embed videos to product gallery along with images on product page of WooCommerce
 *	Allows images and videos together in single product gallery
 *	Does not require to overwrite any WooCommerce core files
 *	Youtube video control parameters are supported.
+*	Compatibility with multisite network.
 
 == Plugin Requirement ==
 
@@ -54,6 +55,9 @@ WordPress   : Wordpress 3.0 and latest
 * Enjoy videos in product gallery at frontend.
 
 == Changelog ==
+
+= 3.0 =
+* Fix - Make Multi-Site Compatibility and update syntax of text domain.
 
 = 2.9 =
 * Test - Checking with Latest wordPress and Contact form 7, Tested and works fine.
