@@ -6,9 +6,9 @@ Donate link: http://www.zealousweb.com/payment/
 Requires at least: 3.0.1
 Tested up to: 6.1.1
 Requires PHP: 5.3
-Stable tag: 3.0
+Stable tag: 3.1
 License: GPLv3 or later License
-Version: 3.0
+Version: 3.1
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Embed videos to product gallery along with images on product page of WooCommerce.
@@ -67,6 +67,9 @@ WordPress   : Wordpress 3.0 and latest
 * Enjoy videos in product gallery at frontend.
 
 == Changelog ==
+
+= 3.1 =
+* Fix - Bug fixed on Product media gallery
 
 = 3.0 =
 * Fix - Make Multi-Site Compatibility and update syntax of text domain.
