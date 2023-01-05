@@ -110,9 +110,14 @@ function embed_videos_init() {
 add_filter( 'attachment_fields_to_edit', 'wcevzw_woo_embed_video', 20, 2);
 function wcevzw_woo_embed_video( $form_fields, $attachment ) {
 
-	if (! $post_id = (int) ($_GET['post'] ?? null)) {
+	$url = $_SERVER['HTTP_REFERER'];
+	parse_str(parse_url($url)['query'], $params);
+	$post_id=$params['post']; //
+
+	if (! $post_id = (int) ($post_id ?? null)) {
 		return $form_fields;
 	}
+
 	$nonce = wp_create_nonce( 'bdn-attach_' . $attachment->ID );
 	$attach_image_action_url = admin_url( "media-upload.php?tab=library&post_id=$post_id" );
 
