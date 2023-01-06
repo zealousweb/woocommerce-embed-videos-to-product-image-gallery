@@ -3,7 +3,7 @@
  * Plugin Name: Embed Videos For Product Image Gallery Using WooCommerce
  * Plugin URL: http://wordpress.org/plugins/embed-videos-product-image-gallery-woocommerce
  * Description:  Embed videos to product gallery alongwith images on product page of WooCommerce.
- * Version: 3.0
+ * Version: 3.1
  * Author: ZealousWeb
  * Author URI: http://zealousweb.com
  * Developer: The Zealousweb Team
@@ -27,7 +27,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
  */
 
 if ( !defined( 'WCEVZW_VERSION' ) ) {
-	define( 'WCEVZW_VERSION', '3.0' ); // Version of plugin
+	define( 'WCEVZW_VERSION', '3.1' ); // Version of plugin
 }
 
 if ( !defined( 'WCEVZW_FILE' ) ) {
