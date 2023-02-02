@@ -14,7 +14,7 @@ Allows images and videos together in a single product gallery
 
 # How To Use
 
-shows all the possible options available for this plugin at Product Gallery media tool.
+shows front end view of inline embedded videos.
 
 ![Screenshot](resources/img/image-1.png)
 
