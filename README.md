@@ -16,15 +16,15 @@ Allows images and videos together in a single product gallery
 
 shows front end view of inline embedded videos.
 
-![Screenshot](resources/img/image-1.png)
+![Screenshot](resources/img/images-1.png)
 
 shows front end view of inline embedded videos.
 
-![Screenshot](resources/img/image-2.png)
+![Screenshot](resources/img/images-2.png)
 
 shows settings page of Youtube video parameters.
 
-![Screenshot](resources/img/image-3.png)
+![Screenshot](resources/img/images-3.png)
 
 
 # Getting Help
