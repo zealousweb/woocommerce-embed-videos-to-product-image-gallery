@@ -18,10 +18,6 @@ shows all the possible options available for this plugin at Product Gallery medi
 
 ![Screenshot](resources/img/image-1.png)
 
-shows all the possible options available for this plugin at Product Gallery media tool.
-
-![Screenshot](resources/img/image-1.png)
-
 shows front end view of inline embedded videos.
 
 ![Screenshot](resources/img/image-2.png)
