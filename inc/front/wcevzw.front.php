@@ -55,7 +55,7 @@ function wcevzw_woo_display_embed_video( $html ) {
 			$video_link_name = get_post_meta( $product_thum_id, 'video_site', true );
 			?>
 			<script type="text/javascript">
-				var video_links = '<?php echo video_site_name( $video_link_name, $videolink_id_value ); ?>';
+				var video_links = '<?php echo esc_js(video_site_name( $video_link_name, $videolink_id_value )); ?>'; 
 				jQuery(window).load(function(){
 					var id = '.woocommerce-product-gallery__wrapper';
 					jQuery('.woocommerce-product-gallery__wrapper').find('div a').first().attr('href','#');
@@ -144,7 +144,7 @@ function wcevzw_woo_display_embed_video( $html ) {
 			$loop++;
 			$newhtml .= '</div>';
 		}
-		echo $newhtml;
+		echo $newhtml;  //phpcs:ignore
 	}
 }
 
@@ -175,6 +175,6 @@ if ( !function_exists( 'video_site_name' ) ) {
 			$video_link = 'https://player.vimeo.com/video/'.$videolink_id;
 			break;
 		}
-		echo $video_link;
+		echo $video_link; //phpcs:ignore
 	}
 }

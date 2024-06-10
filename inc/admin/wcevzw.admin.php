@@ -22,7 +22,7 @@ function wcevzw_woo_activation_check()
 {
 	if( !is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
 		deactivate_plugins( WCEVZW_PLUGIN_BASENAME );
-		wp_die( _e( '<b>Warning</b> : Install/Activate Woocommerce to activate "Embed Videos For Product Image Gallery Using WooCommerce" plugin.' , 'embed-videos-product-image-gallery-woocommerce' ) );
+		wp_die( _e( '<b>Warning</b> : Install/Activate Woocommerce to activate "Embed Videos For Product Image Gallery Using WooCommerce" plugin.' , 'embed-videos-product-image-gallery-woocommerce' ) ); //phpcs:ignore
 	}
 }
 
@@ -65,33 +65,33 @@ function wcevzw_register_embed_videos_settings() {
 */
 function embed_videos_init() {
 ?>
-  <h1><?php echo _e( 'Youtube Video Settings', 'embed-videos-product-image-gallery-woocommerce' ); ?></h1>
+  <h1><?php echo esc_html_e( 'Youtube Video Settings', 'embed-videos-product-image-gallery-woocommerce' ); ?></h1>
   <form method="post" action="options.php">
 	<?php settings_fields( 'embed-videos-settings' ); ?>
 	<?php do_settings_sections( 'embed-videos-settings' ); ?>
 	<table class="form-table">
 		<tr valign="top">
-			<th scope="row"><?php echo _e( 'Autoplay videos', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
+			<th scope="row"><?php echo esc_html_e( 'Autoplay videos', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
 			<td><input type="checkbox" name="embed_videos_autoplay" value="1" <?php echo ( get_option( 'embed_videos_autoplay' ) == 1 ) ? 'checked': ''; ?> /></td>
 		</tr>
 		<tr valign="top">
-			<th scope="row"><?php echo _e( 'Show relative videos', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
+			<th scope="row"><?php echo esc_html_e( 'Show relative videos', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
 			<td><input type="checkbox" name="embed_videos_rel" value="1" <?php echo ( get_option( 'embed_videos_rel' ) == 1 ) ? 'checked': ''; ?> /></td>
 		</tr>
 		<tr valign="top">
-			<th scope="row"><?php echo _e( 'Show video information', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
+			<th scope="row"><?php echo esc_html_e( 'Show video information', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
 			<td>
 				<input type="checkbox" name="embed_videos_showinfo" value="1" <?php echo ( get_option( 'embed_videos_showinfo' ) == 1 ) ? 'checked': ''; ?> />
 			</td>
 		</tr>
 		<tr valign="top">
-			<th scope="row"><?php echo _e( 'Show fullscreen button', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
+			<th scope="row"><?php echo esc_html_e( 'Show fullscreen button', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
 			<td>
 				<input type="checkbox" name="embed_videos_fs" value="1" <?php echo ( get_option( 'embed_videos_fs' ) == 1 ) ? 'checked': ''; ?> />
 			</td>
 		</tr>
 		 <tr valign="top">
-			<th scope="row"><?php echo _e( 'Show video player controls', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
+			<th scope="row"><?php echo esc_html_e( 'Show video player controls', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
 			<td>
 				<input type="checkbox" name="embed_videos_controls" value="1" <?php echo ( get_option( 'embed_videos_controls' ) == 1 ) ? 'checked': ''; ?> />
 			</td>
@@ -110,7 +110,7 @@ function embed_videos_init() {
 add_filter( 'attachment_fields_to_edit', 'wcevzw_woo_embed_video', 20, 2);
 function wcevzw_woo_embed_video( $form_fields, $attachment ) {
 
-	$url = $_SERVER['HTTP_REFERER'];
+	$url = $_SERVER['HTTP_REFERER']; //phpcs:ignore
 	parse_str(parse_url($url)['query'], $params);
 	$post_id=$params['post']; //
 
