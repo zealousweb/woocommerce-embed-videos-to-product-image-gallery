@@ -78,12 +78,13 @@ function embed_videos_init() {
 			<th scope="row"><?php echo esc_html_e( 'Show relative videos', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
 			<td><input type="checkbox" name="embed_videos_rel" value="1" <?php echo ( get_option( 'embed_videos_rel' ) == 1 ) ? 'checked': ''; ?> /></td>
 		</tr>
-		<tr valign="top">
-			<th scope="row"><?php echo esc_html_e( 'Show video information', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
+		<!-- deprecated showinfo paramiter in 2018 -->
+		<!-- <tr valign="top">
+			<th scope="row"><?php //echo esc_html_e( 'Show video information', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
 			<td>
-				<input type="checkbox" name="embed_videos_showinfo" value="1" <?php echo ( get_option( 'embed_videos_showinfo' ) == 1 ) ? 'checked': ''; ?> />
+				<input type="checkbox" name="embed_videos_showinfo" value="1" <?php //echo ( get_option( 'embed_videos_showinfo' ) == 1 ) ? 'checked': ''; ?> />
 			</td>
-		</tr>
+		</tr> -->
 		<tr valign="top">
 			<th scope="row"><?php echo esc_html_e( 'Show fullscreen button', 'embed-videos-product-image-gallery-woocommerce' ).':'; ?></th>
 			<td>

@@ -113,8 +113,8 @@ function wcevzw_woo_display_embed_video( $html ) {
 					$autoplay =  ( empty( $autoplay ) ) ? 0 : 1;
 					$rel = get_option( 'embed_videos_rel' );
 					$rel = ( empty( $rel ) ) ? 0 : 1;
-					$showinfo = get_option( 'embed_videos_showinfo' );
-					$showinfo = ( empty( $showinfo ) ) ? 0 : 1;
+					//$showinfo = get_option( 'embed_videos_showinfo' );
+					//$showinfo = ( empty( $showinfo ) ) ? 0 : 1;
 					$disablekb = get_option( 'embed_videos_disablekb' );
 					$disablekb = ( empty( $disablekb ) ) ? 0 : 1;
 					$fs = get_option( 'embed_videos_fs' );
@@ -124,7 +124,7 @@ function wcevzw_woo_display_embed_video( $html ) {
 					$hd = get_option( 'embed_videos_hd' );
 					$hd = ( empty( $hd ) ) ? 0 : 1;
 
-					$parameters = "?autoplay=".$autoplay."&rel=".$rel."&fs=".$fs."&showinfo=".$showinfo."&disablekb=".$disablekb."&controls=".$controls."&hd=".$hd;
+					$parameters = "?autoplay=".$autoplay."&rel=".$rel."&fs=".$fs."&disablekb=".$disablekb."&controls=".$controls."&hd=".$hd."&mute=".$autoplay;;
 
 					$video_link = 'https://www.youtube.com/embed/'.$videolink_id.$parameters;
 					break;
@@ -156,8 +156,8 @@ if ( !function_exists( 'video_site_name' ) ) {
 			$autoplay = ( empty( $autoplay ) ) ? 0 : 1;
 			$rel = get_option( 'embed_videos_rel' );
 			$rel = ( empty( $rel ) ) ? 0 : 1;
-			$showinfo = get_option( 'embed_videos_showinfo' );
-			$showinfo = ( empty( $showinfo ) ) ? 0 : 1;
+			//$showinfo = get_option( 'embed_videos_showinfo' );
+			//$showinfo = ( empty( $showinfo ) ) ? 0 : 1;
 			$disablekb = get_option( 'embed_videos_disablekb' );
 			$disablekb = ( empty( $disablekb ) ) ? 0 : 1;
 			$fs = get_option( 'embed_videos_fs' );
@@ -167,7 +167,7 @@ if ( !function_exists( 'video_site_name' ) ) {
 			$hd = get_option( 'embed_videos_hd' );
 			$hd = ( empty( $hd ) ) ? 0 : 1;
 
-			$parameters = "?autoplay=".$autoplay."&rel=".$rel."&fs=".$fs."&showinfo=".$showinfo."&disablekb=".$disablekb."&controls=".$controls."&hd=".$hd;
+			$parameters = "?autoplay=".$autoplay."&rel=".$rel."&fs=".$fs."&disablekb=".$disablekb."&controls=".$controls."&hd=".$hd."&mute=".$autoplay;
 
 			$video_link = 'https://www.youtube.com/embed/'.$videolink_id.$parameters;
 			break;
