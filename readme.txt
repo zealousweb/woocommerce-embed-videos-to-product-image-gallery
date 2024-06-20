@@ -1,14 +1,14 @@
 === Embed Videos For Product Image Gallery Using WooCommerce ===
 
 Contributors: zealopensource
-Tags: woocommerce, gallery, video gallery, video and image gallery, embed videos, videos woocommerce, iframe, youtube videos, vimeo videos, videos product gallery
+Tags: woocommerce, gallery, video gallery, embed videos
 Donate link: http://www.zealousweb.com/payment/
 Requires at least: 3.0.1
-Tested up to: 6.1.1
+Tested up to: 6.5
 Requires PHP: 5.3
-Stable tag: 3.1
+Stable tag: 3.2
 License: GPLv3 or later License
-Version: 3.1
+Version: 3.2
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Embed videos to product gallery along with images on product page of WooCommerce.
@@ -34,15 +34,15 @@ WordPress   : Wordpress 3.0 and latest
 
 == OUR OTHER PLUGINS ==
 
-* <strong>[Accept PayPal Payments Using Contact Form 7 Pro](https://www.zealousweb.com/store/accept-paypal-payments-using-contact-form-7-pro)</strong>
-* <strong>[Accept Stripe Payments Using Contact Form 7 Pro](https://www.zealousweb.com/store/accept-stripe-payments-using-contact-form-7-pro)</strong>
-* <strong>[Accept Authorize.NET Payments Using Contact Form 7 Pro](https://www.zealousweb.com/store/accept-authorize-net-payments-using-contact-form-7-pro)</strong>
-* <strong>[Accept Elavon Payments Using Contact Form 7 Pro](https://www.zealousweb.com/store/accept-elavon-payments-using-contact-form-7-pro)</strong>
-* <strong>[Accept 2Checkout Payments Using Contact Form 7 Pro](https://www.zealousweb.com/store/accept-2checkout-payments-using-contact-form-7-pro)</strong>
-* <strong>[Accept SagePay(opayo) Payments Using Contact Form 7 Pro](https://www.zealousweb.com/store/accept-sage-pay-payments-using-contact-form-7-pro)</strong>
-* <strong>[User Registration Using Contact Form 7 Pro](https://www.zealousweb.com/store/user-registration-using-contact-form-7-pro)</strong>
-* <strong>[Abandoned Contact Form 7 Pro](https://www.zealousweb.com/store/abandoned-contact-form-7-pro/)</strong>
-* <strong>[Custom Product Options WooCommerce Pro](https://www.zealousweb.com/store/custom-product-options-woocommerce-pro)</strong>
+* <strong>[Accept PayPal Payments Using Contact Form 7 Pro](https://store.zealousweb.com/accept-paypal-payments-using-contact-form-7-pro)</strong>
+* <strong>[Accept Stripe Payments Using Contact Form 7 Pro](https://store.zealousweb.com/accept-stripe-payments-using-contact-form-7-pro)</strong>
+* <strong>[Accept Authorize.NET Payments Using Contact Form 7 Pro](https://store.zealousweb.com/accept-authorize-net-payments-using-contact-form-7-pro)</strong>
+* <strong>[Accept Elavon Payments Using Contact Form 7 Pro](https://store.zealousweb.com/accept-elavon-payments-using-contact-form-7-pro)</strong>
+* <strong>[Accept 2Checkout Payments Using Contact Form 7 Pro](https://store.zealousweb.com/accept-2checkout-payments-using-contact-form-7-pro)</strong>
+* <strong>[Accept SagePay(opayo) Payments Using Contact Form 7 Pro](https://store.zealousweb.com/accept-sage-pay-payments-using-contact-form-7-pro)</strong>
+* <strong>[User Registration Using Contact Form 7 Pro](https://store.zealousweb.com/user-registration-using-contact-form-7-pro)</strong>
+* <strong>[Abandoned Contact Form 7 Pro](https://store.zealousweb.com/abandoned-contact-form-7-pro)</strong>
+* <strong>[Custom Product Options WooCommerce Pro](https://store.zealousweb.com/custom-product-options-woocommerce-pro)</strong>
 
 == Installation ==
 1. Install "Embed Videos For Product Image Gallery Using WooCommerce" either via the WordPress.org plugin directory, or by uploading the files to your server.
@@ -67,6 +67,9 @@ WordPress   : Wordpress 3.0 and latest
 * Enjoy videos in product gallery at frontend.
 
 == Changelog ==
+
+= 3.2 =
+* Fix - Fixed the product media gallery image not showing issue when added video on it.
 
 = 3.1 =
 * Fix - Bug fixed on Product media gallery

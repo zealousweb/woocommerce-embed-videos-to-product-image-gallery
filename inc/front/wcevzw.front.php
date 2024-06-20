@@ -135,7 +135,7 @@ function wcevzw_woo_display_embed_video( $html ) {
 			}
 			$video = '';
 			if( !empty( $video_link ) ) {
-				$newhtml .= '<a href="#"  data-type="video" data-video="<div class=&quot;wrapper&quot;><div class=&quot;video-wrapper&quot;><iframe width=&quot;1000&quot; height=&quot;640&quot; src=&quot;'. esc_url ( $video_link ) .'&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot;></iframe></div></div>" ><iframe class="woo-iframelist" width="" height="" src="'. esc_url( $video_link ) .'" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" ></iframe></a>';
+				$newhtml .= '<a href="#"  data-type="video" data-video="<div class=&quot;wrapper&quot;><div class=&quot;video-wrapper&quot;><iframe width=&quot;1000&quot; height=&quot;640&quot; src=&quot;'. esc_url ( $video_link ) .'&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot;></iframe></div></div>" ><iframe class="woo-iframelist" width="" height="" src="'. esc_url( $video_link ) .'" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" ></iframe>'. $image .'</a>';
 			} else {
 				$link = (empty($video_link)) ? $image_link : $video_link;
 				$newhtml .= '<a href="'. esc_url( $link) .'" class="'. $image_class.'" title="'. sanitize_title( $image_title ) .'" rel="prettyPhoto[product-gallery]" data-type="image"  >'. $image .' </a>';
