@@ -55,7 +55,7 @@ function wcevzw_woo_display_embed_video( $html ) {
 			$video_link_name = get_post_meta( $product_thum_id, 'video_site', true );
 			?>
 			<script type="text/javascript">
-				var video_links = '<?php echo video_site_name( $video_link_name, $videolink_id_value ); ?>';
+				var video_links = '<?php echo esc_js( video_site_name( $video_link_name, $videolink_id_value ) ); ?>';
 				jQuery(window).load(function(){
 					var id = '.woocommerce-product-gallery__wrapper';
 					jQuery('.woocommerce-product-gallery__wrapper').find('div a').first().attr('href','#');
@@ -113,8 +113,8 @@ function wcevzw_woo_display_embed_video( $html ) {
 					$autoplay =  ( empty( $autoplay ) ) ? 0 : 1;
 					$rel = get_option( 'embed_videos_rel' );
 					$rel = ( empty( $rel ) ) ? 0 : 1;
-					$showinfo = get_option( 'embed_videos_showinfo' );
-					$showinfo = ( empty( $showinfo ) ) ? 0 : 1;
+					//$showinfo = get_option( 'embed_videos_showinfo' );
+					//$showinfo = ( empty( $showinfo ) ) ? 0 : 1;
 					$disablekb = get_option( 'embed_videos_disablekb' );
 					$disablekb = ( empty( $disablekb ) ) ? 0 : 1;
 					$fs = get_option( 'embed_videos_fs' );
@@ -124,7 +124,7 @@ function wcevzw_woo_display_embed_video( $html ) {
 					$hd = get_option( 'embed_videos_hd' );
 					$hd = ( empty( $hd ) ) ? 0 : 1;
 
-					$parameters = "?autoplay=".$autoplay."&rel=".$rel."&fs=".$fs."&showinfo=".$showinfo."&disablekb=".$disablekb."&controls=".$controls."&hd=".$hd;
+					$parameters = "?autoplay=".$autoplay."&rel=".$rel."&fs=".$fs."&disablekb=".$disablekb."&controls=".$controls."&hd=".$hd."&mute=".$autoplay;
 
 					$video_link = 'https://www.youtube.com/embed/'.$videolink_id.$parameters;
 					break;
@@ -144,7 +144,7 @@ function wcevzw_woo_display_embed_video( $html ) {
 			$loop++;
 			$newhtml .= '</div>';
 		}
-		echo $newhtml;
+		echo esc_html($newhtml);
 	}
 }
 
@@ -156,8 +156,8 @@ if ( !function_exists( 'video_site_name' ) ) {
 			$autoplay = ( empty( $autoplay ) ) ? 0 : 1;
 			$rel = get_option( 'embed_videos_rel' );
 			$rel = ( empty( $rel ) ) ? 0 : 1;
-			$showinfo = get_option( 'embed_videos_showinfo' );
-			$showinfo = ( empty( $showinfo ) ) ? 0 : 1;
+			//$showinfo = get_option( 'embed_videos_showinfo' );
+			//$showinfo = ( empty( $showinfo ) ) ? 0 : 1;
 			$disablekb = get_option( 'embed_videos_disablekb' );
 			$disablekb = ( empty( $disablekb ) ) ? 0 : 1;
 			$fs = get_option( 'embed_videos_fs' );
@@ -167,7 +167,7 @@ if ( !function_exists( 'video_site_name' ) ) {
 			$hd = get_option( 'embed_videos_hd' );
 			$hd = ( empty( $hd ) ) ? 0 : 1;
 
-			$parameters = "?autoplay=".$autoplay."&rel=".$rel."&fs=".$fs."&showinfo=".$showinfo."&disablekb=".$disablekb."&controls=".$controls."&hd=".$hd;
+			$parameters = "?autoplay=".$autoplay."&rel=".$rel."&fs=".$fs."&disablekb=".$disablekb."&controls=".$controls."&hd=".$hd."&mute=".$autoplay;
 
 			$video_link = 'https://www.youtube.com/embed/'.$videolink_id.$parameters;
 			break;
@@ -175,6 +175,6 @@ if ( !function_exists( 'video_site_name' ) ) {
 			$video_link = 'https://player.vimeo.com/video/'.$videolink_id;
 			break;
 		}
-		echo $video_link;
+		echo esc_html($video_link);
 	}
 }
