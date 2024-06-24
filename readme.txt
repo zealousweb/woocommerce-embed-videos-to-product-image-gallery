@@ -26,6 +26,7 @@ Embed videos to product gallery along with images on product page of WooCommerce
 *	Does not require to overwrite any WooCommerce core files
 *	Youtube video control parameters are supported.
 *	Compatibility with multisite network.
+* Compatibility of WordPress VIP.
 
 == Plugin Requirement ==
 
