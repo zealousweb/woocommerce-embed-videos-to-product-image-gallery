@@ -5,6 +5,17 @@ Embed videos to the product image gallery
 Supports YouTube and Vimeo videos
 Allows images and videos together in a single product gallery
 
+**Embed Videos For Product Image Gallery Using WooCommerce Features**
+
+Embed videos to product image gallery
+Supports YouTube and Vimeo videos
+Video loads as inline embedded videos in place of featured image or in a lightbox based on WooCommerce settings
+Allows images and videos together in single product gallery
+Does not require to overwrite any WooCommerce core files
+Youtube video control parameters are supported.
+Compatibility with multisite network.
+Compatibility of WordPress VIP.
+
 # Installation
 1. Download the plugin zip file from WordPress.org plugin site to your desktop / PC
 2. If the file is downloaded as a zip archive, extract the plugin folder to your desktop.
