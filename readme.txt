@@ -4,11 +4,11 @@ Contributors: zealopensource
 Tags: woocommerce, gallery, video gallery, embed videos
 Donate link: http://www.zealousweb.com/payment/
 Requires at least: 3.0.1
-Tested up to: 6.5
+Tested up to: 6.6
 Requires PHP: 5.3
-Stable tag: 3.3
+Stable tag: 3.4
 License: GPLv3 or later License
-Version: 3.3
+Version: 3.4
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Embed videos to product gallery along with images on product page of WooCommerce.
@@ -26,7 +26,7 @@ Embed videos to product gallery along with images on product page of WooCommerce
 *	Does not require to overwrite any WooCommerce core files
 *	Youtube video control parameters are supported.
 *	Compatibility with multisite network.
-* Compatibility of WordPress VIP.
+*	Compatibility of WordPress VIP.
 
 == Plugin Requirement ==
 
@@ -68,6 +68,9 @@ WordPress   : Wordpress 3.0 and latest
 * Enjoy videos in product gallery at frontend.
 
 == Changelog ==
+
+= 3.4 =
+* HTML display issue resolved.
 
 = 3.3 =
 * Improved compatibility with WordPress VIP platform by refactoring code to adhere to VIP coding standards.

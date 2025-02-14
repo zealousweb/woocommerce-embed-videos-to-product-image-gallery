@@ -144,7 +144,7 @@ function wcevzw_woo_display_embed_video( $html ) {
 			$loop++;
 			$newhtml .= '</div>';
 		}
-		echo esc_html($newhtml);
+		echo $newhtml;
 	}
 }
 
