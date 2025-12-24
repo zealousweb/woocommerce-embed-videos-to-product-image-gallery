@@ -4,11 +4,11 @@ Contributors: zealopensource
 Tags: woocommerce, gallery, video gallery, embed videos
 Donate link: http://www.zealousweb.com/payment/
 Requires at least: 3.0.1
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 5.3
-Stable tag: 3.6
+Stable tag: 3.7
 License: GPLv3 or later License
-Version: 3.6
+Version: 3.7
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Embed videos to product gallery along with images on product page of WooCommerce.
@@ -73,6 +73,9 @@ WordPress   : Wordpress 3.0 and latest
 * Enjoy videos in product gallery at frontend.
 
 == Changelog ==
+
+= 3.7 =
+* Tested with the latest version of WordPress (6.9).
 
 = 3.6 =
 * Minor changes - Doc update
