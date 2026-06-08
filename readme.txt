@@ -4,11 +4,11 @@ Contributors: zealopensource
 Tags: woocommerce, gallery, video gallery, embed videos
 Donate link: http://www.zealousweb.com/payment/
 Requires at least: 3.0.1
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 5.3
-Stable tag: 3.7
+Stable tag: 3.8
 License: GPLv3 or later License
-Version: 3.7
+Version: 3.8
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Embed videos to product gallery along with images on product page of WooCommerce.
@@ -73,6 +73,9 @@ WordPress   : Wordpress 3.0 and latest
 * Enjoy videos in product gallery at frontend.
 
 == Changelog ==
+
+= 3.8 =
+* Added a new "Open Support Ticket" button to provide quick and direct access to support.
 
 = 3.7 =
 * Tested with the latest version of WordPress (6.9).
@@ -139,11 +142,68 @@ WordPress   : Wordpress 3.0 and latest
 
 == Upgrade Notice ==
 
-= 2.4 =
+= 3.8 =
+* Added a new "Open Support Ticket" button to provide quick and direct access to support.
+
+= 3.7 =
+* Tested with the latest version of WordPress (6.9).
+
+= 3.6 =
+* Minor changes - Doc update
+
+= 3.5 =
+* Minor Workflow Adjustments 
+
+= 3.4 =
+* HTML display issue resolved.
+
+= 3.3 =
+* Improved compatibility with WordPress VIP platform by refactoring code to adhere to VIP coding standards.
+
+= 3.2 =
+* Fix - Fixed the product media gallery image not showing issue when added video on it.
+
+= 3.1 =
+* Fix - Bug fixed on Product media gallery
+
+= 3.0 =
+* Fix - Make Multi-Site Compatibility and update syntax of text domain.
+
+= 2.9 =
+* Test - Checking with Latest wordPress and Contact form 7, Tested and works fine.
+
+= 2.8 - 27/10/2020 =
+* Fix - Solved Gallery Photoswip issue.
+
+= 2.7 - 21/08/2020 =
+* Change - Update Documents and author name.
+
+= 2.6 - 29/05/2020 =
+* Fix - Bug fixing.
+
+= 2.5 - 25/05/2020 =
+* Fix - Bug fixing.
+
+= 2.4 - 26/03/2019 =
 * Change - Update Plugin Name.
 
-= 2.3 =
-Bug fixing and remove unwanted code.
+= 2.3 - 18/07/2017 =
+* Fix - Bug fixing.
 
-= 2.4 =
-* Change - Update Plugin Name.
+= 2.2 - 18/07/2017 =
+* Change - Bug fixing.
+
+= 2.1 - 10/07/2017 =
+* Change - We have make plugin comparable to latest woo commerce 3.1.0 with wordpress 4.8.
+
+= 2.0 - 18/04/2017 =
+* Change - We have make plugin comparable to latest woo commerce 3.0.3.
+
+= 1.2 - 02/09/2015 =
+* Change - Added Youtube video control Settings.
+
+= 1.1 - 27/04/2015 =
+* Change - Fixed some issues.
+
+= 1.0 =
+* Initial Release
