@@ -17,6 +17,14 @@ if ( !defined( 'ABSPATH' ) ) exit;
 require_once ( WCEVZW_FILE );
 global $post;
 
+/**
+ * enqueue script and style for plugin
+ */
+add_action( 'admin_enqueue_scripts', 'admin_wcevzw_embedvideos_scripts',999 );
+function admin_wcevzw_embedvideos_scripts() {
+	wp_enqueue_style( WCEVZW_PREFIX . '-style-admin', WCEVZW_URL .'assets/css/admin.css' );
+}
+
 register_activation_hook ( WCEVZW_FILE, 'wcevzw_woo_activation_check');
 function wcevzw_woo_activation_check()
 {
@@ -65,7 +73,14 @@ function wcevzw_register_embed_videos_settings() {
 */
 function embed_videos_init() {
 ?>
-  <h1><?php echo esc_html_e( 'Youtube Video Settings', 'embed-videos-product-image-gallery-woocommerce' ); ?></h1>
+  <div class="embed-videos-help-card">
+		<h1><?php echo esc_html__( 'Youtube Video Settings', 'embed-videos-product-image-gallery-woocommerce' );?></h1>
+		<div class="embed-videos-help-card-footer">
+			<a class="embed-videos-primary-btn" href="https://support.zealousweb.com/portal/en/home" target="_blank" rel="noopener noreferrer">
+				<?php esc_html_e( 'Open Support Ticket', 'embed-videos-product-image-gallery-woocommerce' ); ?>
+			</a>
+		</div>
+	</div>
   <form method="post" action="options.php">
 	<?php settings_fields( 'embed-videos-settings' ); ?>
 	<?php do_settings_sections( 'embed-videos-settings' ); ?>
